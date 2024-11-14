@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>*~*~* degentv.fun - RaNdOm ViDeO cHaT *~*~*</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="construction-banner">
+        <marquee scrollamount="5" behavior="alternate">🚧 $DEGENTV 🚧 $DEGENTV 🚧 $DEGENTV 🚧</marquee>
+    </div>
+    <div class="sparkle-line"></div>
+    <div class="container">
+        <div class="header">
+            <div class="star">⭐</div>
+            <h1>degen<span class="blink">tv.</span>fun</h1>
+            <div class="star">⭐</div>
+            <div class="visitor-counter">
+                <marquee scrollamount="1" direction="right">★·.·´¯`·.·★ </marquee>
+                <span id="marketCap">Market Cap: Loading...</span>
+                <marquee scrollamount="1" direction="left">★·.·´¯`·.·★ </marquee>
+            </div>
+        </div>
+        <div class="video-container">
+            <div class="video-wrapper">
+                <video id="localVideo" autoplay muted playsinline></video>
+                <div class="video-label"><<< YOU >>></div>
+            </div>
+            <div class="video-wrapper">
+                <video id="remoteVideo" autoplay playsinline></video>
+                <div class="video-label"><<< STRANGER >>></div>
+            </div>
+        </div>
+        <div class="chat-container">
+            <div id="messages" class="messages"></div>
+            <div class="typing-indicator">Stranger is typing...</div>
+            <div class="chat-input">
+                <input type="text" id="messageInput" placeholder="Type a message...">
+                <button id="sendButton">Send</button>
+            </div>
+        </div>
+        <div id="loadingOverlay" class="loading-overlay hidden">
+            <div class="spinner"></div>
+            <div class="loading-text">Finding someone to chat with...</div>
+            <button class="cancel-button" id="cancelButton">Cancel</button>
+        </div>
+        <div class="controls">
+            <button id="startButton">★彡 Start New Chat 彡★</button>
+            <button id="nextButton">☆彡 Next Person 彡☆</button>
+        </div>
+        <div class="footer">
+            <marquee scrollamount="2">
+                <span class="dolphin">🐬</span>
+                <span>☆ﾟ･*:.｡. You must have a webcam to chat .｡.:*･ﾟ☆</span>
+                <span class="dolphin">🐬</span>
+            </marquee>
+            <div class="badges">
+                <a href="" target="_blank" class="badge-link">
+                    <img src="https://i.imgur.com/La6xjMM.png" alt="Telegram" class="badge-img">
+                </a>
+                <a href="https://pump.fun" target="_blank" class="badge-link">
+                    <img src="https://i.imgur.com/jl5Alcw.png" alt="Pump.fun" class="badge-img">
+                </a>
+                <a href="" target="_blank" class="badge-link">
+                    <img src="https://i.imgur.com/raH2X4M.png" alt="X" class="badge-img">
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+</body>
+</html> 

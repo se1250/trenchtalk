@@ -49,7 +49,7 @@ async function trackMarketCap() {
                                                 }
                                             }
                                             Currency: {
-                                                MintAddress: { is: "" }
+                                                MintAddress: { is: "ABCnT7ZuXPkci3KPPbJMHWRz8wNMDby4GPThAQG9pump" }
                                             }
                                         }
                                         Transaction: { Result: { Success: true } }
